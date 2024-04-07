@@ -1,0 +1,71 @@
+
+body{
+  background-color: black;
+}
+
+
+
+.titolo{
+  color: white;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.questinutile{
+  text-align: start;
+  margin-top: 600px;
+  margin-left: 870px;
+  color: white;
+}
+
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+
+
+.pulsebutton{
+  height: 60px;
+  width: 250px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  animation: animate infinite 2s ;
+  
+  border: 2px solid red;
+  border-radius: 100PX;
+  cursor: pointer;
+  
+}
+
+.pulsebutton:hover{
+  background-color: red;
+  color: black;
+
+}
+
+
+@keyframes animate
+{
+    0%
+  {
+    box-shadow: 0 0 0 0 rgba(255,4,0,.7), 0 0 0 0 rgba(255,4,0,.7);
+  }
+    40%
+  {
+    box-shadow: 0 0 0 0 rgba(255,4,0,0), 0 0 0 40px rgba(255,4,0,.7);
+  }
+    80%
+  {
+    box-shadow: 0 0 0 0 rgba(255,4,0,0), 0 0 0 50px rgba(255,4,0,0);
+  }
+    100%
+  {
+    box-shadow: 0 0 0 0 rgba(255,4,0,.7), 0 0 0 40px rgba(255,4,0,0);
+  }
+}
